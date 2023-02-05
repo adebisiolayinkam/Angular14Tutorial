@@ -16,11 +16,17 @@ export class UsersComponent implements OnInit {
 
 allowNewUser = false;
 
+userCreatedStatus = 'No User is Created';
+
   constructor() { 
     setTimeout(() => {
       this.allowNewUser =true;
     }, 3000);
   }
+
+changeUserCreatedStatus(){
+  this.userCreatedStatus = 'User is Created';
+}
 
   ngOnInit(): void {
     
