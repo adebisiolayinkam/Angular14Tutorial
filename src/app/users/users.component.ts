@@ -17,6 +17,7 @@ export class UsersComponent implements OnInit {
 allowNewUser = false;
 userCreatedStatus = 'No User is Created';
 userName = 'Test User';
+isUserCreated = false;
 
   constructor() { 
     setTimeout(() => {
@@ -25,6 +26,7 @@ userName = 'Test User';
   }
 
 changeUserCreatedStatus(){
+  this.isUserCreated = true;
   this.userCreatedStatus = 'User is Created';
 }
 
